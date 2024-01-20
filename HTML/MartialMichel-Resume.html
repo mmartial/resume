@@ -1,0 +1,694 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Martial Michel -- Resume</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 1200px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+@media print {
+	body {
+		margin: 0;
+		color: rgb(0, 0, 0);
+		font-size: 10;
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.25rem;
+	margin-top: 0.25rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head>
+<body><article id="c34601f2-5d98-4dac-92a5-b0dfbf675e0f" class="page sans"><header><h1 class="page-title">Martial Michel, PhD</h1><p class="page-description"></p></header><div class="page-body"><p id="a3c8c987-f293-4a8b-a855-6ea35c234775" class="block-color-red_background">Full-Stack Infrastructure &amp; Solutions Architect ❖ DevSecOps / Cloud / HPC / CV / ML / NLP ❖ Executive / Researcher / Technology Evangelist ❖ US Citizen</p><hr id="5dfc7e90-93f5-45d5-9430-3f048798c602"/><div id="e308e272-4e20-4f14-9d38-410d6956380c" class="column-list"><div id="1a39cd8e-716b-4ea4-8e07-97a8ff7f1863" style="width:62.5%" class="column">
+<h1 id="d427798a-df5a-4a8b-8eb7-e4d4d2a67b4e" class="block-color-red_background">Professional Experience</h1><p id="28405d67-f062-4c93-82a9-cc6fe23e4ab8" class="block-color-gray_background"><strong>Chief Technologist<br/></strong><a href="https://infotrend.com/"><strong>Infotrend Inc.</strong></a>  |  2022.10 – Present<br/>❖ <strong>Supported Agencies:</strong> <a href="https://sec.gov/">U.S. Securities and Exchange Commission</a> · <a href="https://www.consumerfinance.gov/">Consumer Financial Protection Bureau</a><br/>❖ <strong>Skills:</strong>  Executive Team · Technology Leadership · Blockchain · Cloud Computing ·  Computer Vision  · Cryptocurrency · DevOps · Docker · E-Discovery · Machine Learning · OpenStack · PyTorch · TensorFlow</p><hr id="2faf116b-22f8-4d1a-98e6-cba37bd05c90"/><p id="08d0dc32-7d78-4a20-8aed-c60e240eca68" class="block-color-gray_background"><strong>Chief Scientific Officer<br/></strong><a href="https://datamachines.com/"><strong>Data Machines</strong></a>  |  2017.08 – 2022.10<br/>❖ <strong>Short list of Supported Agencies:</strong> <a href="https://www.darpa.mil/">Defense Advanced Research Projects Agency (DARPA)</a>, US Army, <a href="https://www.nist.gov/">National Institute of Standard and Technology (NIST)</a>, <a href="https://www.nga.mil/">National Geospatial-Intelligence Agency (NGA)</a><br/>❖ <strong>Short list of Supported Programs:</strong> <a href="https://www.darpa.mil/program/media-forensics">DARPA Media Forensics (MediFor)</a>, <a href="https://www.darpa.mil/program/data-driven-discovery-of-models">DARPA Data-Driven Discovery of Models (D3M)</a>, <a href="https://www.darpa.mil/program/prototype-resilient-operations-testbed-for-expeditionary-urban-scenarios">DARPA Prototype Resilient Operations Testbed for Expeditionary Urban Scenarios (PROTEUS)</a>, US Army Next-Generation Biometric Collection Capability (NXGBCC), <a href="https://www.nist.gov/itl/iad/mig/analytics-container-environment-ace-reference-framework">NIST Analytics Container Environment (ACE)</a>, Principal Investigator: <a href="https://www.darpa.mil/program/competency-aware-machine-learning">DARPA Competency-Aware Machine Learning (CAML)</a>.  <br/>❖ <strong>Co-chair:</strong>  <a href="http://www.openresearchcloud.org/">Open Research Cloud</a> · <a href="http://sites.ieee.org/sagroups-2302/">IEEE P2302 Standard for Intercloud Interoperability and Federation (SIIF)</a> · <a href="http://collaborate.nist.gov/twiki-cloud-computing/bin/view/CloudComputing/FederatedCloudPWGFC">NIST Public Working Group on Federated Cloud (PWGFC), Conceptual Model</a> <br/>❖ <em>Director of Scientific Computing</em> from Aug 2017 to Oct 2018  <br/>❖ <strong>Skills:</strong>  Architecture · Biometrics · C Suite ·  Computer Vision · Cloud Computing · DevSecOps · Docker · GIS Applications · Infrastructure · Kubernetes · Machine Learning · OpenStack · PyTorch · TensorFlow</p><hr id="48406d6e-2eac-4711-a259-efc4c44c6917"/><p id="c1fc4955-756e-4336-82c1-f3175b5a1baa" class="block-color-gray_background"><strong>Federal Employee: Computer Scientist, Supervisor (2013-2017) ❖ Contractor: Systems Plus, Inc (2001-2013) ❖ Guest Researcher (1997-2001)<br/></strong><a href="https://www.nist.gov/">National Institute of Standards and Technology</a>  |  1997.04 – 2017.08<br/>❖ <a href="https://www.nist.gov/">NIST</a>&#x27;s <a href="https://www.nist.gov/itl">Information Technology Laboratory</a> (ITL) <a href="https://www.nist.gov/itl/iad">Information Access Division</a> (IAD) <a href="https://www.nist.gov/itl/iad/mig">Multimodal Information Group</a> (MIG)<br/>❖ <strong>Short list of Supported projects as Federal Employee (Computer Scientist, Supervisor, 2013-2017): </strong>MIG&#x27;s Evaluation Management System&#x27;s OpenStack deployment (2013-2017) · DARPA&#x27;s <a href="https://www.darpa.mil/program/data-driven-discovery-of-models">Data-Driven Discovery of Models</a> (D3M) · IARPA&#x27;s <a href="https://www.iarpa.gov/index.php/research-programs/material">Machine Translation for English Retrieval of Information in Any Language</a> (MATERIAL) (2016-2017) · DARPA&#x27;s <a href="https://www.darpa.mil/program/low-resource-languages-for-emergent-incidents">Low Resource Languages for Emergent Incidents</a> (LORELEI) (2016-2017) · <a href="https://www.nist.gov/sites/default/files/documents/2017/05/09/may-vcat-june2012.pdf">Strategic and Emerging Research Initiatives</a> (SERI) Award (2015-2017) · <a href="https://obamawhitehouse.archives.gov/the-press-office/2015/07/29/executive-order-creating-national-strategic-computing-initiative">National Strategic Computing Initiative</a> (NSCI) effort (2015-2017) · <a href="http://trecvid.nist.gov/">TRECVID</a> <a href="https://www.nist.gov/itl/iad/mig/trecvid-surveillance-event-detection-evaluation-track">Surveillance Event Detection</a> (SED) (2013-2017) · <a href="http://trecvid.nist.gov/">TRECVID</a> <a href="https://www.nist.gov/itl/iad/mig/trecvid-multimedia-event-detection-evaluation-track">Multimedia Event Detection</a> (MED) (2013-2016) · IARPA&#x27;s <a href="https://www.iarpa.gov/index.php/research-programs/babel">BABEL</a> (2013-2016) · <a href="https://www.nist.gov/itl/iad/mig/open-keyword-search-evaluation">Open Keyword Search</a> (2013-2016) · IARPA&#x27;s <a href="https://www.iarpa.gov/index.php/research-programs/aladdin-video">ALADDIN</a> (2013-2015) · Integrated Clinical Environment (ICE) team (2013-2015) working in collaboration with the <a href="http://smartamerica.org/wp-content/uploads/2014/05/CLHC-June-11-Podium-V1.pdf">Closed Loop Healthcare</a> <a href="http://smartamerica.org/expo/">SmartAmerica</a> Team · <a href="https://www.nist.gov/itl/iad/video-analytic-measurement-0">Video Tracking Analytics for Physical Security</a> (VTAPS) (2013-2014)<br/>❖ <strong>Short list of Supported projects as Systems Plus, Inc. Contractor (Senior Solutions Architect · Subject Matter Expert · Research Scientist · Project Manager · Manager, 2001-2013):</strong> Manager of the Systems Plus team at NIST &amp; Business Development (2007-2013) ❖ IARPA&#x27;s BABEL&#x27;s Scoring Server (2011-2013) • TRECVid&#x27;s Surveillance Event Detection (SED) &amp; Multimedia Event Detection (MED) Evaluations (2010-2013) • AVSS Multiple Camera Person Tracking Challenge Evaluation (2008-2010) · CLassification of Events, Activities and Relationships (CLEAR) Evaluation (2007-2009) • Lead Engineer of the NIST Meeting Recognition Project (2001-2008) • Software Architect of the NIST Smart Space&#x27;s NIST Smart Data Flow System<br/>(version 1) (2001-2004) • System Administrator (2001-2009) ❖ &quot;Technology Think Tank&quot; (T3) Award [2012]<br/>❖ <strong>Guest Researcher (1997-2001):</strong> Principal Developer on Message Passing Interface (MPI) marshaling tools (PhD Subject)<br/>❖ <strong>Skills:</strong> Computer Vision · Data Science · DevOps · Docker · Machine Learning · Natural Language Processing · OpenStack· Program Management  · Video Analytics</p>
+<h1 id="738a25f4-8cbf-425c-b3ae-068d59a1ac53" class="block-color-red_background">Education</h1><p id="d82fd0a4-86cf-47fd-aab0-32ac7c8a76ca" class="block-color-gray_background"><strong>PhD — High-Performance Computing and Networks<br/></strong>Université Henri Poincaré  |  1996.09 – 2021.10<br/>❖ &quot;Thèse en Informatique&quot; (<em>Ph.D. in Computer Science</em>), Université Henri Poincaré, Résédas Research Group, LORIA, Nancy, France. ❖ A &quot;Diplôme d&#x27;Etudes Approfondies&quot; (DEA), the prerequisite for the &quot;Thèse&quot;, was done in the same research group from 1996 to 1997 ❖ Ph.D. Dissertation on transferring dynamic data types using Message Passing Interface (MPI) ❖ Specialization in High-Performance Computing (HPC) and Networks ❖ Research performed with the NIST position.</p><hr id="ef8bcc71-270a-453c-86eb-326f4426821c"/><p id="22148672-4af1-4ed7-8d07-59d2e12fd6f0" class="block-color-gray_background"><strong>Master&#x27;s Degree — Systems and Networks<br/></strong><a href="https://telecomnancy.univ-lorraine.fr/">ESIAL (now Telecom Nancy)</a>  |  1994.09 – 1997.09<br/>❖ “Diplôme d&#x27;Ingénieur en Informatique&quot; (<em>Master&#x27;s Degree in Computer Science</em>), Ecole Supérieure d&#x27;Informatique et Applications de Lorraine (ESIAL) (renamed &quot;Telecom Nancy&quot; in 2012), in Nancy, France (1995-1997). Emphasis on systems and networks.</p><hr id="4c791e4e-bfd3-45c2-9eb1-590bf410c49a"/><p id="323dd763-f485-4a65-92ef-db7c019bb8fd" class="block-color-gray_background"><strong>Baccalauréat — Electronics<br/></strong>Lycée de la Communication (Metz, France)<strong> </strong> |  Graduated 1992<br/>❖ Emphasis on Electronics. Graduated with honors.<br/></p>
+<h1 id="75ce30ea-d1e3-471b-a381-edce3c61b67a" class="block-color-red_background">Short List of Publications/Presentations</h1><p id="f327a63e-f64a-4322-af72-d79e95076417" class="block-color-gray_background"><strong>The IEEE 2302-2021 Standard on Intercloud Interoperability and Federation<br/></strong>IEEE Computer Society&#x27;s Cloud Continuum (VOL. 2 • NO. 1 • 2022)<br/>🔗 <a href="https://www.computer.org/publications/cloud-continuum/current-issue">https://www.computer.org/publications/cloud-continuum/current-issue</a></p><p id="218a99ca-34e8-49d6-bddd-c56b79ad8d48" class="block-color-gray_background"><strong>Standards for Cloud Federation<br/></strong>IEEE Standards Activities Board Webinar (2021.03)<br/>🔗 <a href="https://www.youtube.com/watch?v=yy2UIu8QfGw">https://www.youtube.com/watch?v=yy2UIu8QfGw</a></p><p id="9155881d-2d59-45d7-a727-a6e12fa5ff0e" class="block-color-gray_background"><strong>Enabling GPU-Enhanced Computer Vision and Machine Learning Research Using Containers<br/></strong>High-Performance Computing - ISC High-Performance 2019 International Workshops, Lecture Notes in Computer Science Volume 11887 (2019.12)<br/>🔗 <a href="https://link.springer.com/chapter/10.1007/978-3-030-34356-9_8">https://link.springer.com/chapter/10.1007/978-3-030-34356-9_8</a></p><p id="df7f33f6-f969-4fc1-90e4-835c82d880cf" class="block-color-gray_background"><strong>Open Source Private Cloud Platforms for Big Data <br/></strong>Big Data Analytics for Sensor-Network Collected Intelligence (2017.02)<br/>🔗 <a href="http://www.sciencedirect.com/science/article/pii/B9780128093931000039">http://www.sciencedirect.com/science/article/pii/B9780128093931000039</a></p><p id="9e97c7f1-dda0-48b0-a7da-875e893a8905" class="block-color-gray_background"><strong>Trecvid 2017: Evaluating ad-hoc and instance video search, events detection, video captioning and hyperlinking <br/></strong>Proceedings of TRECVID 2017 (2017.11)<br/>🔗 <a href="https://www-nlpir.nist.gov/projects/tvpubs/tv17.papers/tv17overview.pdf">https://www-nlpir.nist.gov/projects/tvpubs/tv17.papers/tv17overview.pdf</a></p><p id="c3573666-1dd2-41e1-9ad0-c5b8271ee223" class="block-color-gray_background"><strong>A new data science research program: evaluation, metrology, standards, and community outreach</strong><strong> <br/></strong>International Journal of Data Science and Analytics (2016.08)<br/>🔗 <a href="https://link.springer.com/article/10.1007/s41060-016-0016-z">https://link.springer.com/article/10.1007/s41060-016-0016-z</a></p><p id="dc656292-7736-4bc3-999d-b4b84b00d150" class="block-color-gray_background"><strong>Creating HAVIC: Heterogeneous Audio Visual Internet Collection</strong><strong> <br/></strong>Proceedings of the International Language Resources and Evaluation (LREC) 2012 (2012.05)<br/>🔗 <a href="http://www.lrec-conf.org/proceedings/lrec2012/summaries/885.html">http://www.lrec-conf.org/proceedings/lrec2012/summaries/885.html</a></p><p id="fdfb5be9-bd80-448c-9b9c-28ec2fd4b3bb" class="block-color-gray_background"><strong>The NIST Meeting Room Pilot Corpus <br/></strong>Proceedings of the International Language Resources and Evaluation Conference (LREC) 2004 (2004.09)<br/><strong> · </strong>NIST Meeting Pilot Corpus Speech: ISBN: 1-58563-302-x<br/><strong> · </strong>NIST Meeting Pilot Corpus Transcripts and Metadata: ISBN: 1-58563-303-8<br/>🔗 <a href="http://www.lrec-conf.org/proceedings/lrec2004/pdf/137.pdf">http://www.lrec-conf.org/proceedings/lrec2004/pdf/137.pdf</a> </p></div><div id="b8f35ba0-9a22-4f99-a74e-049337de67dd" style="width:37.5%" class="column"><p id="10202e9c-432f-4b73-9f5c-b13398eb444b" class="block-color-gray_background">Worked in the distributed computing field for over 25 years, starting with designing data serialization algorithms for MPI (PhD subject), time synchronizing multimedia network streams collected using commercial-off-the-shelf hardware, developing a job scheduler, architecting data-driven research evaluation platforms, and conceiving and leading the team building an agnostic benchmarking model to allow researchers to bring their algorithms to specialized datasets.<br/>❖ Passionate about teaching and mentoring others in the fields I have been fortunate to work in, be it Computer Vision, Natural Language Processing, Architecture and Infrastructure, Project Management, Growth mindset, ...<br/>❖ Technology Evangelist and enthusiast (self-hosting, coding, etc.), hacker, researcher, team lead, and Open Source developer since 1998.<br/></p><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="a65a81f3-df54-4b6a-9df7-610ed875fe5c"><div style="font-size:1.5em"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/></div><div style="width:100%"><a href="https://linkedin.com/in/martialmichel">martialmichel</a> - expanded experience and publications</div></figure><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="dcedfea7-3e60-43b4-862d-ed4ca58eed2c"><div style="font-size:1.5em"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></div><div style="width:100%"><a href="https://github.com/mmartial">mmartial</a> - open-source code and studies</div></figure>
+<h1 id="64a985a8-75b3-4943-b523-f43642993f92" class="block-color-red_background">Auxiliary Professional Highlights</h1><p id="7f6d605f-1f91-4082-b2fc-42d6b0fb3fe2" class="block-color-gray_background"><strong>American Council for Technology - Industry Advisory Council (ACT-IAC) <br/></strong>Emerging Technology Community of Interest Program Chair<br/>🔗 <a href="https://www.actiac.org/">actiac.org/</a> - <mark class="highlight-gray">2023.08-Present</mark></p><hr id="b899bb33-a376-4463-a234-e90c7f09de3c"/><p id="95779639-58d0-4312-ad10-5f7d2de6971b" class="block-color-gray_background"><strong>OpenStack <br/></strong>Scientific Special Interest Group co-chair for North America<br/>🔗 <a href="https://wiki.openstack.org/wiki/Scientific_SIG">openstack.org/wiki/Scientific_SIG</a> - <mark class="highlight-gray">2016.10-Present</mark></p><hr id="87cbb73f-3aee-434a-9861-20c52f59874b"/><p id="fb971ad8-dad4-426a-9681-8ccdff255108" class="block-color-gray_background"><strong>CUDA TensorFlow PyTorch OpenCV<br/></strong>Main Developer - <code>Dockerfile</code>s with CPU and CUDA builds for ML/CV research based on <code>nvidia/cuda</code> and <code>Ubuntu</code> container images.<mark class="highlight-gray"><br/></mark>🔗<mark class="highlight-gray"> </mark><a href="https://github.com/Infotrend-Inc/CTPO">GitHub: Infotrend-Inc/CTPO</a> - <mark class="highlight-gray">2023 – Present<br/></mark>🔗<mark class="highlight-gray"> </mark><a href="https://github.com/datamachines/cuda_tensorflow_opencv">GitHub: datamachines/cuda_tensorflow_opencv</a> - <mark class="highlight-gray">2019 – 2022</mark></p><hr id="d75e39e3-7d14-4786-9187-961f9da2e0fc"/><p id="1b9bce35-2a2b-4c30-81b5-0a42eec1628f" class="block-color-gray_background"><strong>IEEE 2302-2021<br/></strong>Standard for Intercloud Interoperability and Federation (<a href="https://development.standards.ieee.org/myproject-web/public/view.html#pardetail/6144">vice-chair</a>)<mark class="highlight-gray"><br/></mark>🔗 <a href="https://standards.ieee.org/ieee/2302/7056/">standards.ieee.org/ieee/2302/7056/</a> - <mark class="highlight-gray">Published 2022.03</mark></p><hr id="0548d80e-8bc7-4fdb-88bb-8fbe6b3fa0df"/><p id="10ec11b8-9fdc-4064-ae89-87a6627ba663" class="block-color-gray_background"><strong>NIST SP 500-332<br/></strong>The NIST Cloud Federation Reference Architecture<mark class="highlight-gray"><br/></mark>🔗 <a href="https://www.nist.gov/publications/nist-cloud-federation-reference-architecture-0">nist.gov/publications/nist-cloud-federation-reference-architecture-0</a> - <mark class="highlight-gray">Published: 2020.02</mark></p><hr id="45c6b98e-763d-4ba6-865d-e073c12b2c4c"/><p id="361fde99-4d26-47a2-aebf-354c7cf03a9e" class="block-color-gray_background"><strong>Bronze Medal Award for Superior Federal Service<br/></strong>&quot;For development of novel evaluation frameworks, metrics and datasets supporting foundational research in video analytics and video search”<mark class="highlight-gray"><br/></mark>🔗 <a href="https://www.nist.gov/news-events/news/2015/12/national-institute-standards-and-technology-presents-2015-awards">nist.gov/news-events/news/2015/12/national-institute-standards-and-technology-presents-2015-awards</a> - <mark class="highlight-gray">2015.12</mark></p>
+<h1 id="c1b734c2-eebb-486c-b7f4-50b7e7b52fc2" class="block-color-red_background">Skills</h1><p id="52321ec9-6784-454e-8658-83a060459c86" class="block-color-gray_background"> ❖ Biometrics<br/> ❖ Cloud Computing<br/> ❖ Computer Vision (CV)<br/> ❖ Data Science<br/> ❖ DevSecOps<br/> ❖ High-Performance Computing (HPC)<br/> ❖ Machine Learning (ML)<br/> ❖ Natural Language Processing (NLP)<br/></p>
+<h1 id="54e39454-cd26-4577-b840-93b753d9783b" class="block-color-red_background">Knowledge/Stacks</h1><p id="361683a0-178c-4c00-8c6c-96b4f602c53b" class="block-color-gray_background">❖ <strong>Cloud</strong>: OpenStack, Docker, Ansible, Vagrant, Terraform, k8s, AWS, GCP, Azure, …</p><p id="7cda02f2-f9bf-47e8-bcf8-a947e154924b" class="block-color-gray_background">❖ <strong>OS/Infra:</strong> Linux, macOS, misc SMP, MPI, GPU, Nvidia Jetson, Intel Xeon Phi, Raspberry Pi, Compiler-Compiler, …</p><p id="70b7345f-4648-4e53-97ff-c81d08608196" class="block-color-gray_background">❖ <strong>Coding:</strong> Python, Go, Perl, C/C++, bash, Git, SQL/NoSQL/Graph, LaTeX, …</p><p id="05567b79-abb2-48a3-96fd-c6e9727622ac" class="block-color-gray_background">❖ <strong>Research Stack:</strong> OpenCV, TensorFlow, PyTorch, Keras, spaCy, pandas, …</p><p id="6e5770de-5fbd-4ea2-8da0-04ed4782eb06" class="block-color-gray_background">❖ <strong>Leadership:</strong> NIST&#x27;s New Leader Program (Class 15, 2017) • Project Management and Leadership Program (Class II, 2014)</p><p id="ce0d1069-8996-4c4f-b30a-f425cec34c9f" class="block-color-gray_background">❖ <strong>OpenSource Dev:</strong> <a href="https://github.com/usnistgov/JobRunner">JobRunner</a> (creator, 2010-2017) • <a href="https://github.com/usnistgov/F4DE">F4DE</a> (2008-2017) • eBayAgent (2001-2007) • keychain (2002) • NetComics (1999-2006) • Dead Link Check (creator, 1999) • Public Bookmark Generator (creator, 1998-2001)</p><p id="dcb4ec29-fe89-4b1f-8226-a82272dce89f" class="block-color-gray_background">❖ <strong>Publications/Presentations</strong>: 🔗 <a href="https://www.linkedin.com/in/martialmichel/details/publications/">linkedin.com</a> • 🔗 <a href="https://www.researchgate.net/profile/Martial-Michel">ResearchGate</a></p>
+<h1 id="d7c38166-8170-441a-8d24-8eac315f53d5" class="block-color-red_background">Languages</h1><div id="2eae75fd-19da-43a0-b38c-93fdd597c55e" class="column-list"><div id="2e04240a-aed1-4b58-9a44-c15f48e631e4" style="width:100%" class="column"><p id="09b75f8b-633f-4ba7-b4c4-c7181b76354d" class="block-color-gray_background"><strong>English</strong> - Professional</p></div><div id="c0a3f2a7-c4d0-495f-99f0-f903f3b59840" style="width:100%" class="column"><p id="8d1959cf-5c31-433a-96a1-190947e82335" class="block-color-gray_background"><strong>French</strong> - Professional</p></div></div><p id="4db50112-7ae1-4c5f-9dd5-fb6d5200c19b" class="">
+</p></div></div><hr id="d4a01cf6-2d22-4b54-b99d-fd9711d37862"/><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="73df4c98-c2c7-4949-8a3a-1e6d1394e451"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/document_lightgray.svg"/></div><div style="width:100%">Latest version initially created in <a href="https://Notion.so">Notion</a>, exported to HTML, media-print edited in <a href="https://code.visualstudio.com">Visual Code</a> and printed to PDF. </div></figure><p id="454606d3-2c92-4a7a-b819-ead366a9b546" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
